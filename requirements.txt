@@ -1,0 +1,12 @@
+streamlit
+torch
+torchaudio
+transformers
+pandas
+numpy
+plotly
+reportlab
+requests
+soundfile
+scipy
+openpyxl

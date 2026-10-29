@@ -1,0 +1,21 @@
+# Deepfake Audio Detection
+
+## Individual Contributions
+
+**Divisha Yadav — 16014023022**
+
+Contributed to software implementation and integration, audio processing, deepfake classification, Streamlit application development, result visualization, and report generation.
+
+## Project Guides
+
+- Dr. Jagannath Nirmal
+- Dr. Shila Jawale
+
+## Institution
+
+K. J. Somaiya School of Engineering  
+Somaiya Vidyavihar University, Mumbai
+
+## Academic Year
+
+2025–2026

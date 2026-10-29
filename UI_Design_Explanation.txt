@@ -1,0 +1,45 @@
+PROJECT: DEEPFAKE AUDIO DETECTION
+
+UI DESIGN AND NAVIGATION EXPLANATION
+
+1. Design Overview
+
+The application uses Streamlit to provide an interactive interface for detecting potentially spoofed or deepfake audio. The interface follows a dark visual theme with contrasting colors, metric cards, charts, and clear navigation controls.
+
+2. Main Screens
+
+A. Real-Time Voice Tester
+
+This screen allows users to record audio directly or upload an audio file. The application processes the audio and displays the classification result as BONAFIDE (REAL) or SPOOF (DEEPFAKE), along with the model score, decision threshold, waveform, Mel-spectrogram, diagnostic summary, and PDF report download option.
+
+B. Model Analytics & Reports
+
+This screen presents available model evaluation metrics and training history. It includes visualizations for loss and EER history, ROC and DET curves, confusion matrices, and learned WavLM layer weights when the corresponding metrics are available. Users can also export a model evaluation report as a PDF.
+
+C. AI Assistant
+
+This screen provides a chat interface through which users can ask questions about model performance. The application sends the question and available performance context to a local Ollama service running the Llama 3.2 model.
+
+3. Navigation
+
+A sidebar radio menu provides navigation between the three screens:
+- Real-Time Voice Tester
+- Model Analytics & Reports
+- AI Assistant
+
+4. Frontend Components
+
+The interface uses Streamlit components including file upload controls, audio recording, sidebar navigation, metric cards, interactive Plotly charts, chat messages, and PDF download buttons. Custom CSS styles provide the dark background, typography, verdict indicators, and card appearance.
+
+5. User Workflow
+
+The user selects a screen from the sidebar. On the Voice Tester screen, the user records or uploads audio, reviews the classification and visualizations, and optionally downloads a report. The Analytics screen supports reviewing saved model metrics, while the AI Assistant provides a conversational interface for model-related questions.
+
+6. Editable Design Artifact
+
+The primary editable UI artifact is dashboard.py. The layout, colors, navigation, input controls, visualizations, and report controls can be modified directly in the Python source code.
+
+7. Hardware Applicability
+
+This project is implemented as a software application and does not use a custom PCB, microcontroller assembly, or FPGA interface. The software UI and source code therefore constitute the relevant design artifacts.
+
